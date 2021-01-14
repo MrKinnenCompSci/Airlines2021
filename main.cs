@@ -2,11 +2,16 @@ using System;
 
 class MainClass {
   public static void Main (string[] args) {
-    Console.WriteLine ("Hello World");
+
     Airport BOH = new Airport();
     Airport LPL = new Airport();
 
-    BOH.ReadDetailsFromFile();
+		//Instantiate mainMenu as a class of Menu
+		Menu mainMenu = new Menu();
+		//Display menu and get the user's option
+		mainMenu.DisplayMenu();
+
+    //BOH.ReadDetailsFromFile();
 		//LPL.ReadDetailsFromFile();
     Console.ReadLine();
   }
